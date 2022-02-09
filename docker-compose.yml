@@ -1,0 +1,11 @@
+version: '2.1'
+
+services: 
+  gps:
+    privileged: true
+    build: "./gps"
+    devices: 
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    ports:
+      - "7575:7575"
+
