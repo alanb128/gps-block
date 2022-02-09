@@ -13,7 +13,16 @@ Use the docker-compose.yml file as an example of how to add this to your project
 
 ## Usage
 
-By default, the project will run a HTTP server on port 7575 and listen for external connections.To use internally only among your other container, change:
+By default, the project will run an HTTP server on port 7575 and listen for external connections. You can poll the data using: (replace your device's IP address)
+
+- `curl 192.168.1.100:7575`
+
+- `http://192.168.1.100:7575`
+
+- An HTTP library in your favorite programming languge (Node, Python, etc...) such as [Requests](https://docs.python-requests.org/en/latest/) for Python.
+
+
+To use internally only among your other containers, change:
 
 ```
 ports:
@@ -26,6 +35,8 @@ to:
 expose:
       - "7575"
 ```
+
+You could then refer to the HTTP server by container name from another container, such as `curl gps:7575`
 
 To use MQTT instead, add a device variable `MQTT_ADDRESS` with the IP of your MQTT broker and it will publish to that instead of running an HTTP server.
 
