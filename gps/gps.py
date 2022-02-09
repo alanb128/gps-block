@@ -15,9 +15,13 @@ if mqtt_address == '0':
     use_httpserver = 1
 mqtt_topic = os.getenv('MQTT_TOPIC', 'gps')
 
+gps_data = "{}"
+
 # Simple webserver
 # see https://gist.github.com/joaoventura/824cbb501b8585f7c61bd54fec42f08f
 def background_web(server_socket):
+
+    global gps_data
 
     while True:
         # Wait for client connections
