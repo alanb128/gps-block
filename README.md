@@ -5,6 +5,8 @@ Easily add gps functionality to your project.
 
 The [GPS NEO-6M](https://www.amazon.com/gp/product/B07P8YMVNT/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1) is a decent and very inexpensive GPS module. This project creates a container you can add to your project to retrieve data from the GPS module via HTTP or MQTT. (If you aren't using containers, you can still run or modify the gps.py example)
 
+This gps-block is intended to be used via the USB (not serial) connection and has been tested on a Raspberry Pi 4.
+
 ## Installation
 
 Use the docker-compose.yml file as an example of how to add this to your project.
