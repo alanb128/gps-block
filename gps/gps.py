@@ -15,7 +15,7 @@ if mqtt_address == '0':
     use_httpserver = 1
 mqtt_topic = os.getenv('MQTT_TOPIC', 'gps')
 
-gps_data = "{}"
+gps_data = '{"mode": 0}'
 
 # Simple webserver
 # see https://gist.github.com/joaoventura/824cbb501b8585f7c61bd54fec42f08f
@@ -75,3 +75,4 @@ while True:
                      mqtt_client.publish(mqtt_topic, gps_data)
                      print("-------------------------------")
                      i = 0
+

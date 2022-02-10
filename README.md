@@ -1,11 +1,11 @@
 # gps-block
-Easily add gps functionality to your project. 
+Easily pull GPS data from a cheap GPS module. 
 
 ## Overview
 
-The [GPS NEO-6M](https://www.amazon.com/gp/product/B07P8YMVNT/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1) is a decent and very inexpensive GPS module. This project creates a container you can add to your project to retrieve data from the GPS module via HTTP or MQTT. (If you aren't using containers, you can still run or modify the gps.py example)
+The [GPS NEO-6M](https://www.amazon.com/gp/product/B07P8YMVNT/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1) is a decent and very inexpensive GPS module. This project creates a container you can add to your project to retrieve data from the GPS module via HTTP or MQTT. (If you aren't using containers, you can still use or modify the gps.py file as an example)
 
-This gps-block is intended to be used via the USB (not serial) connection and has been tested on a Raspberry Pi 4.
+This gps-block is intended to be used via the USB (not serial) connection and has been tested on a Raspberry Pi 4. It runs great on [balenaCloud](https://www.balena.io/) for IoT devices!
 
 ## Installation
 
@@ -44,7 +44,7 @@ When using MQTT, the default topic will be `gps` but you can change that using t
 
 ## Data
 
-The gps-block will return data in json format. Here is an example:
+The gps-block will return all TPV data in json format. Here is an example:
 
 ```
 {
@@ -86,6 +86,8 @@ The gps-block will return data in json format. Here is an example:
     "velN": 0.01
 }
 ```
+
+You can see definitions of these fields on the [gpsd_json - Man Page](https://www.mankier.com/5/gpsd_json). Note that at a minimum, the `mode` field will always be present, with a value of `0` even if the gps device is not attached. Other fields and values will depend on satellite signal and availability.
 
 ### Thanks
 Resources used to create this block:
