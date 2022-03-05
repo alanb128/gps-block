@@ -93,6 +93,6 @@ You can see definitions of these fields on the [gpsd_json - Man Page](https://ww
 Resources used to create this block:
 
 - https://github.com/tfeldmann/gpsdclient
-
+- https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
 - https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
 
