@@ -5,7 +5,7 @@ Easily pull GPS data from a cheap GPS module.
 
 The [GPS NEO-6M](https://www.amazon.com/gp/product/B07P8YMVNT/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1) is a decent and very inexpensive GPS module. This project creates a container you can add to your project to retrieve data from the GPS module via HTTP or MQTT. (If you aren't using containers, you can still use or modify the gps.py file as an example)
 
-This gps-block is intended to be used via the USB (not serial) connection and has been tested on a Raspberry Pi 4. It runs great on [balenaCloud](https://www.balena.io/) for IoT devices!
+This gps-block is intended to be used via the USB (not serial) connection and has been tested on a Raspberry Pi 4 and Zero 2 W. It runs great on [balenaCloud](https://www.balena.io/) for IoT devices!
 
 ## Installation
 
