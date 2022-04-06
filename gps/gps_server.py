@@ -17,7 +17,7 @@ except:
 mqtt_address = os.getenv('MQTT_ADDRESS', '0')
 if mqtt_address == '0':
     use_httpserver = 1
-mqtt_topic = os.getenv('MQTT_TOPIC', 'gps')
+mqtt_topic = os.getenv('MQTT_TOPIC', 'sensors')
 
 def getPositionData(gps):
     gps_data = {"mode": 0}
