@@ -40,7 +40,7 @@ You could then refer to the HTTP server by container name from another container
 
 To use MQTT instead, add a device variable `MQTT_ADDRESS` with the IP of your MQTT broker and it will publish to that instead of running an HTTP server.
 
-When using MQTT, the default topic will be `gps` but you can change that using the `MQTT_TOPIC` device variable. By default, it will publish every five cycles of TPV data from the GPS module (approximately every five seconds.) This value can be changed by setting `SKIP_CYCLES` to an integer value.
+When using MQTT, the default topic will be `gps` but you can change that using the `MQTT_TOPIC` device variable. By default, it will publish every five  seconds. This value can be changed by setting `MQTT_INTERVAL` to an integer value.
 
 ## Data
 
