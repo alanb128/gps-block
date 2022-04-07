@@ -1,0 +1,24 @@
+name: gps-server
+type: sw.application
+description: >-
+  Add GPS functionality to your project.
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/alanb128/gps-block'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/alanb128/gps-block/main/logo.png
+data:
+  defaultDeviceType: raspberry-pi4-64
+  supportedDeviceTypes:
+    - raspberrypi0-2w-64
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+    - fincm3
+    - raspberrypicm4-ioboard
+version: 3.5.2
