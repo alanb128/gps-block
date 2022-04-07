@@ -1,7 +1,7 @@
 name: gps-server
 type: sw.application
 description: >-
-  Add GPS functionality to your project.
+  Easily read GPS data from a USB connected NEO-6M GPS module.
 assets:
   repository:
     type: blob.asset
